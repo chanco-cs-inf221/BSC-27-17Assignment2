@@ -1,0 +1,75 @@
+
+<html>
+    <title>Assignment2</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="assessment2.css">
+</head>
+    <header>
+        <p>Victor Chirwa|chanco student</p>
+        <p id="links"><a href="Github.com">Github</a>--<a href="facebook.com">Facebook</a>--<a href="E-mail.com">Email</a>
+    </header>
+    <body bgcolor="#99ccff">
+        <section>
+            <div id="container" bgcolor="#99ccff"
+>
+            <h2 id="project">projects</h2>
+            <div class="subjects">
+               <h3>course1</h3>
+               <p>Advanced programming Advanced programming</p>
+               <p>Advanced programming Advanced programming</p>
+               <p>Advanced programming Advanced programming</p>
+               <p>Advanced programming Advanced programming</p>
+               <p>Advanced programming Advanced programming</p>
+               <p>Advanced programming Advanced programming</p>
+            </div>
+            <div class="subjects">
+               <h3>course2</h3>
+               <p>Enterprise Management Enterprise Management</p>
+               <p>Enterprise Management Enterprise Management</p>
+               <p>Enterprise Management Enterprise Management</p>
+               <p>Enterprise Management Enterprise Management</p>
+               <p>Enterprise Management Enterprise Management</p>
+               <p>Enterprise Management Enterprise Management</p>
+            </div>
+            <div class="subjects">
+               <h3>course3</h3>
+               <p>this is web this is web this is web</p>
+               <p>more than a web page more than a web page</p>
+               <p>kidding its a ordinary web page</p>
+               <p>wait you think its not a web page</p>
+               <p>believe me it is believe me it is</p>
+               <p>Am sure it is am sure it is</p> 
+            </div> 
+        </section>
+        <form action="http.form2.html" method="POST"></form>
+        <h2>Project Name</h2>
+        <input name= "fullname">
+
+        <h2>Project description</h2>
+        <input id= "text">
+        <h2>completion date</h2>
+        <input Date= "Date">
+        <button onclick="store()" type="button">submit</button>
+
+        <script type="text/javascript">
+        function store(){
+            const form=document.querySelector('form');
+            const button=document.querySelector('button');
+        
+                var inputfullname=document.getElementById("name");
+                localStorage.setItem("fullname", JSON.stringify("name"));
+                localStorage.getItem("name");
+        
+                var inputtext=document.getElementById("id");
+                localStorage.setItem("text",JSON.stringify("id"));
+                localStorage.getItem('id');
+        
+                var inputDate=document.getElementById("Date");
+                localStorage.setItem("Date",JSON.stringify("Date"));
+                localStorage.getItem('Date');
+            
+        }    
+            </script>
+            </body>
+        
+        </html>

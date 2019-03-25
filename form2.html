@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <title>form1</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="assessement.css">
+</head>
+    <header>
+        <p>Any Work Experience acquired</p>
+        </header>
+    <body>
+
+        <div id="dilo"></div>
+
+        <form action="form2.html" method="POST"></form>
+        <h1>Name Of Organisation</h1>
+        <input name="full_name">
+
+        <h1>Work Experience</h1>
+        <input exp="text">
+        <button onclick="store()" type="button">submit</button>
+    </Form>
+    <script type="text/javascript">
+
+    function store(){
+    const form=document.querySelector('form');
+    const button=document.querySelector('button');
+
+    var inputfull_name=document.getElementById('name');
+    localStorage.setItem("full_name", JSON.stringify('name'));
+    localStorage.getItem('name');
+
+    var inputtext=document.getElementById('exp');
+    localStorage.setItem("text",JSON.stringify('id'));
+    localStorage.getItem('exp');
+            }
+     
+    </script>
+    </body>
+
+    </div> 
+    </body>
+    
+
+</html>
